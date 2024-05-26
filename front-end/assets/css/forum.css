@@ -1,0 +1,350 @@
+
+/* =====================================  search ================================ */
+#container-forum{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container-forum h1{
+   color: #344767;
+   margin-left: 30px;
+}
+
+#container-forum .search{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#container-forum .search> div{
+    width: 60%;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--color-white);
+    padding: 1rem;
+    height: 230px;
+}
+
+#container-forum .search> div h1{
+    color: var(--color-green-medium);
+    margin-bottom: 20px;
+}
+
+#container-forum .search> div h1{
+    color: var(--color-green-medium);
+}
+
+#container-forum .search> div form{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 170px;
+}
+
+#container-forum .search> div form div{
+    line-height: 35px;
+    width: 40%;
+}
+
+
+#container-forum .search> div form> input{
+    position: absolute;
+    bottom: 0;
+    width: 30% !important; 
+    cursor: pointer;
+    color: var(--color-white) !important;
+    transition: 0.1s ease-in;
+    background-color: var(--color-green-bold);
+}
+
+#container-forum .search> div form> input:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 2px 3px 0 var(--color-green-medium);
+}
+
+#container-forum .search> div form input:focus,#container-forum .search> div form select:focus{
+    background-color: rgba(65, 65, 160, 0.204); 
+}
+
+#container-forum .search> div form input,#container-forum .search> div form select{ 
+    border: 1px solid var(--color-green-yellow);
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 15px;
+    color: var(--color-black-logo);
+    width: 100%;
+}
+
+
+/* ========================================== #container-forum main ============================================ */
+#container-forum main{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+
+/* ================================================  livres ========================================== */
+
+#container-forum main .livres{
+    width: 55%;
+    height: 600px;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--color-white);
+    margin-bottom: 50px;
+    border-radius: 10px;
+  }
+  
+  #container-forum main .livres .card{
+    width: 100%;
+    border-radius: 10px;
+    height: 90%;
+    overflow: auto;
+    margin-bottom: 40px;
+}
+
+#container-forum main .livres .card .row{
+    padding: 1rem 2rem;
+}
+
+#container-forum main .livres .card .row h4{
+    font-weight: 600;
+    color: var(--color-green-medium);
+}
+
+#container-forum main .livres .card .row p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #344767c3;
+}
+
+#container-forum main .livres .card .table{
+    width: 100%;
+    color: #67748e;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+    gap: 1rem;
+    padding: 0.875rem;
+}
+
+#container-forum main .livres .card .table .question {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 5px;
+  border-top: 1px solid grey ;
+  /* border-bottom: 1px solid grey ; */
+  position: relative;
+} 
+
+#container-forum main .livres .card .table .question .repondre {
+  background: rgba(41, 166, 24, 0.611);
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  text-align: center;
+} 
+
+#container-forum main .livres .card .table .question p {
+ padding-left: 1rem;
+} 
+
+#container-forum main .livres .card .table .question button {
+  width: 100px;
+  height: 25px;
+  background: green;
+  color: white;
+  border-radius: 8px;
+} 
+
+#container-forum main .livres form{
+  width: 100%;
+  height: 10%;
+  display: grid;
+place-items: center;
+  color: white;
+  border-radius: 8px;
+  background-color: #cccccc63;
+  /* transform: translateY(-15px); */
+} 
+
+#container-forum main .livres form div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+} 
+
+#container-forum main .livres form div input{
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  padding: 0 1rem;
+} 
+
+#container-forum main .livres form div span{
+  border-radius: 10px; 
+  height: 35px;
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+  background: green;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+} 
+
+
+/* ==================================================== commentaires =========================================== */
+#container-forum main .section-commentaires{
+    background-color: var(--color-white);
+    border-radius:10px ;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    height: 603px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    width: 40%;
+    margin-left: 20px;
+  }
+  
+  #container-forum main .section-commentaires h1{
+    font-size: 1.2rem;
+    color: var(--color-green-medium);
+  }
+  
+  #container-forum main .section-commentaires form{
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  
+  #container-forum main .section-commentaires form div{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  
+  #container-forum main .section-commentaires form div input{
+    width: 80%;
+    border-radius: 10px; 
+    padding: 0 1rem;  
+  }
+  
+  #container-forum main .section-commentaires form div span{
+    border-radius: 10px; 
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    background: green;
+    color: white;
+    border-radius: 8px;  
+  }
+  
+  #container-forum main .section-commentaires form div{
+    width: 100%;
+  }
+  
+  #container-forum main .section-commentaires .commentaires {
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    gap: 10px 0px;
+}
+
+#container-forum main .section-commentaires .commentaires .reponse {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 5px;
+  border-top: 1px solid grey ;
+  /* border-bottom: 1px solid grey ; */
+  position: relative;
+} 
+
+#container-forum main .section-commentaires .commentaires .reponse h3 {
+  color: #344767c3;
+  font-weight: 600;
+} 
+
+#container-forum main .section-commentaires .commentaires .reponse p {
+  color: #344767c3;
+  margin-left: 20px;
+} 
+
+#container-forum main .section-commentaires .commentaires .reponse {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 5px;
+  border-top: 1px solid grey ;
+  /* border-bottom: 1px solid grey ; */
+  position: relative;
+} 
+
+#container-forum main .section-commentaires .commentaires h2 {
+  margin-bottom: 10px;
+} 
+
+#container-forum main .section-commentaires .commentaires .commentaire{
+    display: flex;
+    width: 100%;
+    gap: 0px 20px;
+}
+
+#container-forum main .section-commentaires .commentaires .commentaire img{
+   width: 60px;
+   height: 40px;
+   background-color: #ccc;
+   border-radius: 50%;
+}
+
+#container-forum main .section-commentaires .commentaires .commentaire .cmt{
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0px;
+}
+
+#container-forum main .section-commentaires .commentaires .commentaire .cmt h5{
+  color: #344767;
+}
+
+#container-forum main .section-commentaires .commentaires .commentaire .cmt span{
+  font-size: 0.6rem;
+}
+
+#container-forum main .section-commentaires .commentaires .commentaire .cmt span:last-child{
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #8392AB;
+  text-transform: uppercase;
+}
+
+#container-forum main .section-commentaires #submit_reponse_forum{
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 100%;
+}
+
+
+

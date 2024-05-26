@@ -1,0 +1,291 @@
+
+/* =====================================  search ================================ */
+#acceuil{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#acceuil .search{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#acceuil .search> div{
+    width: 60%;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--color-white);
+    padding: 1rem;
+    height: 230px;
+}
+
+#acceuil .search> div h1{
+    color: var(--color-green-medium);
+    margin-bottom: 20px;
+}
+
+#acceuil .search> div h1{
+    color: var(--color-green-medium);
+}
+
+#acceuil .search> div form{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 170px;
+}
+
+#acceuil .search> div form div{
+    line-height: 35px;
+    width: 40%;
+}
+
+
+#acceuil .search> div form> input{
+    position: absolute;
+    bottom: 0;
+    width: 30% !important; 
+    cursor: pointer;
+    color: var(--color-white) !important;
+    transition: 0.1s ease-in;
+    background-color: var(--color-green-bold);
+}
+
+#acceuil .search> div form> input:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 2px 3px 0 var(--color-green-medium);
+}
+
+#acceuil .search> div form input:focus,#acceuil .search> div form select:focus{
+    background-color: rgba(65, 65, 160, 0.204); 
+}
+
+#acceuil .search> div form input,#acceuil .search> div form select{ 
+    border: 1px solid var(--color-green-yellow);
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 15px;
+    color: var(--color-black-logo);
+    width: 100%;
+}
+
+
+/* ========================================== #acceuil main ============================================ */
+#acceuil main{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+
+/* ================================================  livres ========================================== */
+
+#acceuil main .livres{
+    width: 88%;
+}
+
+#acceuil main .livres .card{
+    width: 100%;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#acceuil main .livres .card .row{
+    padding: 1rem 2rem;
+}
+
+#acceuil main .livres .card .row h4{
+    font-weight: 600;
+    color: var(--color-green-medium);
+}
+
+#acceuil main .livres .card .row p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #344767c3;
+}
+
+#acceuil main .livres .card .table{
+    width: 100%;
+    color: #67748e;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+    padding: 0.875rem;
+}
+
+#acceuil main .livres .card .table .ligne{
+    width: 200px;
+    padding: 1rem;
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-medium) 100%);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#acceuil main .livres .card .table .ligne:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(310deg, var(--color-green-medium) 0%, var(--color-green-bold) 100%);
+
+} 
+
+#acceuil main .livres .card .table .ligne .progress>span{
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 80%;
+  height: 10px;
+  display: block;
+}
+
+#acceuil main .livres .card .table .ligne  .progress>span span{
+  background-image: linear-gradient(-90deg, green 0%,red 100%);
+  border-radius: 50px;
+  height: 100%;
+  display: block;
+}
+
+#acceuil main .livres .card .table tr td:first-child a{
+    color: var(--color-green-medium);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#acceuil main .livres .card .table tr td:first-child a:hover{
+    color: var(--color-green-yellow);
+  
+}
+
+
+/* ==================================================footer table ================================================================ */
+#acceuil main .livres .table_footer{
+    display: flex;
+    justify-content: space-around;
+    min-width: 520px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+#acceuil main .livres  .next, #acceuil main .livres .previous{
+    border-radius: 10px;
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-medium) 100%);
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.1s ease-in;
+  }
+
+ #acceuil main .livres  .previous:hover{
+    transform: translateX(-5px);
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+}
+ 
+#acceuil main .livres .next:hover{
+    transform: translateX(5px);
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+  }
+  
+ #acceuil main .livres #pagination{
+    display: flex;
+    gap: 4%;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+
+ #acceuil main .livres .ligne:hover{
+      background-color: #ccc;
+  }
+  
+#acceuil main .livres  .page{
+      color: var(--color-white);
+      padding: 5px 16px;
+      border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s ease-in;
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-medium) 100%);
+  }
+#acceuil main .livres  .active_page{
+    background-image: linear-gradient(310deg,  var(--color-green-yellow) 0%, var(--color-green-medium) 100%);
+  }
+
+#acceuil main .livres  .page:hover{
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+  }
+
+
+/* ==================================================== commentaires =========================================== */
+#acceuil main .section-commentaires{
+    background-color: var(--color-white);
+    border-radius:10px ;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    height: 603px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    overflow-y: scroll;
+    width: 20%;
+    margin-left: 20px;
+}
+
+#acceuil main .section-commentaires h1{
+    font-size: 1.2rem;
+    color: var(--color-green-medium);
+}
+
+#acceuil main .section-commentaires .commentaires {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px 0px;
+}
+
+#acceuil main .section-commentaires .commentaires .commentaire{
+    display: flex;
+    width: 100%;
+    gap: 0px 20px;
+}
+
+#acceuil main .section-commentaires .commentaires .commentaire img{
+   width: 60px;
+   height: 40px;
+   background-color: #ccc;
+   border-radius: 50%;
+}
+
+#acceuil main .section-commentaires .commentaires .commentaire .cmt{
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0px;
+}
+
+#acceuil main .section-commentaires .commentaires .commentaire .cmt h5{
+  color: #344767;
+}
+
+#acceuil main .section-commentaires .commentaires .commentaire .cmt span{
+  font-size: 0.6rem;
+}
+
+#acceuil main .section-commentaires .commentaires .commentaire .cmt span:last-child{
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #8392AB;
+  text-transform: uppercase;
+}
+

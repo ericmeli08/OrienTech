@@ -1,0 +1,263 @@
+
+/* =====================================  search ================================ */
+
+
+#container-quiz .search{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#container-quiz .search> div{
+    width: 60%;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--color-white);
+    padding: 1rem;
+    height: 230px;
+}
+
+#container-quiz .search> div h1{
+    color: var(--color-green-medium);
+    margin-bottom: 20px;
+}
+
+#container-quiz .search> div h1{
+    color: var(--color-green-medium);
+}
+
+#container-quiz .search> div form{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 170px;
+}
+
+#container-quiz .search> div form div{
+    line-height: 35px;
+    width: 40%;
+}
+
+
+#container-quiz .search> div form> input{
+    position: absolute;
+    bottom: 0;
+    width: 30% !important; 
+    cursor: pointer;
+    color: var(--color-white) !important;
+    transition: 0.1s ease-in;
+    background-color: var(--color-green-bold);
+}
+
+#container-quiz .search> div form> input:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 2px 3px 0 var(--color-green-medium);
+}
+
+#container-quiz .search> div form input:focus,#container-quiz .search> div form select:focus{
+    background-color: rgba(65, 65, 160, 0.204); 
+}
+
+#container-quiz .search> div form input,#container-quiz .search> div form select{ 
+    border: 1px solid var(--color-green-yellow);
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 15px;
+    color: var(--color-black-logo);
+    width: 100%;
+}
+
+
+/* ========================================== #container-quiz main ============================================ */
+#container-quiz main{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+/* ================================================  livres ========================================== */
+
+
+#container-quiz main .livres{
+    width: 95%;
+}
+
+#container-quiz main .livres .card{
+    width: 100%;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#container-quiz main .livres .card .row{
+    padding: 1rem 2rem;
+}
+
+#container-quiz main .livres .card .row h4{
+    font-weight: 600;
+    color: var(--color-green-medium);
+}
+
+#container-quiz main .livres .card .row p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #344767c3;
+}
+
+#container-quiz main .livres .card .table{
+    width: 100%;
+    color: #67748e;
+  }
+  
+  #container-quiz main .livres .card .table form{
+      display: grid;
+      grid-template-columns: 48%  48%;
+    text-align: left;
+    gap: 2%;
+      border-bottom: 1px solid #e9ecef;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.78rem;
+      color: #232830;
+      opacity: 0.9;
+      text-transform: uppercase;
+  }
+
+
+#container-quiz main .livres .card .table form div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+#container-quiz main .livres .card .table form .submit{
+    padding: 0.3rem 0.5rem;
+    background: rgb(32, 191, 32);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.5s ease;
+}
+#container-quiz main .livres .card .table form .submit:hover{
+    transform: scale(1.2);
+    width: 100px;
+}
+
+#container-quiz main .livres .card .table form div select{
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+}
+
+#container-quiz main .livres .card .table tr td{
+    border-bottom: 1px solid #e9ecef;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+#container-quiz main .livres .card .table tr td:last-child a{
+    text-decoration: none;
+}
+
+#container-quiz main .livres .card .table tr td:last-child a:first-child{
+    color: rgba(36, 36, 214, 0.814);
+}
+
+#container-quiz main .livres .card .table tr td:last-child a:last-child{
+    color: var(--color-red);
+}
+
+#container-quiz main .livres .card .table tr .progress>span{
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 80%;
+  height: 10px;
+  display: block;
+}
+
+#container-quiz main .livres .card .table tr .progress>span span{
+  background-image: linear-gradient(-90deg, green 0%,red 100%);
+  border-radius: 50px;
+  /* width: 60%; */
+  height: 100%;
+  display: block;
+}
+
+#container-quiz main .livres .card .table tr td:first-child a{
+    color: var(--color-green-medium);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#container-quiz main .livres .card .table tr td:first-child a:hover{
+    color: var(--color-green-yellow);
+  
+}
+
+
+
+/* =====footer table ========= */
+#container-quiz main .livres .table_footer{
+    display: flex;
+    justify-content: space-around;
+    min-width: 520px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+#container-quiz main .livres  .next, #container-quiz main .livres .previous{
+    border-radius: 10px;
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-medium) 100%);
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.1s ease-in;
+  }
+
+ #container-quiz main .livres  .previous:hover{
+    transform: translateX(-5px);
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+}
+ 
+#container-quiz main .livres .next:hover{
+    transform: translateX(5px);
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+  }
+  
+ #container-quiz main .livres #pagination{
+    display: flex;
+    gap: 4%;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+
+ #container-quiz main .livres .ligne:hover{
+      background-color: #ccc;
+  }
+  
+#container-quiz main .livres  .page{
+      color: var(--color-white);
+      padding: 5px 16px;
+      border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s ease-in;
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-medium) 100%);
+  }
+#container-quiz main .livres  .active_page{
+    background-image: linear-gradient(310deg,  var(--color-green-yellow) 0%, var(--color-green-medium) 100%);
+  }
+
+#container-quiz main .livres  .page:hover{
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+  }
